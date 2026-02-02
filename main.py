@@ -25,7 +25,7 @@ def keep_alive():
     while True:
         try:
             time.sleep(1500)
-            if RENDER_APP_URL != "আপনার_রেন্ডার_URL_এখানে_দিন":
+            if RENDER_APP_URL != "https://genbot-ppjy.onrender.com":
                 requests.get(RENDER_APP_URL)
         except:
             pass
@@ -57,7 +57,7 @@ def get_easy_code(prompt):
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "✅ **সহজ কোড জেনারেটর রেডি!**\nএটি এখন Render-এ হোস্ট করা এবং Self-Ping মুডে আছে।")
+    bot.reply_to(message, "আসসালামু আলাইকুম ☺️👋!\n 🛢️আমি কোড জেন বট। কোন ধরনের বট তৈরি করতে হলে আমাকে সম্পূর্ণ বিস্তারিতভাবে বলুন।\n ডেভলপার:@rifatbro22 ।")
 
 @bot.message_handler(func=lambda message: True)
 def handle(message):
