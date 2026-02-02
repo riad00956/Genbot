@@ -8,7 +8,7 @@ from flask import Flask
 BOT_TOKEN = "8590059786:AAHHYSvKOJ-Pc1kvoeQTaoQs6-brwTbzn4Q"
 GROQ_API_KEY = "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"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-RENDER_APP_URL = "আপনার_রেন্ডার_URL_এখানে_দিন" 
+RENDER_APP_URL = "https://genbot-ppjy.onrender.com" 
 
 bot = telebot.TeleBot(BOT_TOKEN)
 user_sessions = {}
